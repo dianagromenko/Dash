@@ -8,8 +8,7 @@ import { catchError, tap } from "rxjs/operators";
 })
 export class EmailService {
 
-  constructor(private httpClient: HttpClient) {
-  }
+  constructor(private httpClient: HttpClient) {}
 
   public sendEmail(data: any): Observable<any>{
     return this.httpClient.post('http://localhost:8000/request', { data })
