@@ -1,20 +1,101 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+<header>
+
+  <img src="../assets/images/images3.png" class="logo" >
+  <div class="border-bottom"></div>
+
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light ">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Портфолио</a>
+        </li>
+
+        <div class="btn-group" dropdown>
+          <button id="button-basic" dropdownToggle type="button" class="btn nav-link dropdown-toggle stylebutton"
+                  aria-controls="dropdown-basic">
+            Услуги <span class="caret"></span>
+          </button>
+          <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+              role="menu" aria-labelledby="button-basic">
+            <li role="menuitem"><a class="dropdown-item" routerLink="./widing">Свадебные фотосессии</a></li>
+            <li role="menuitem"><a class="dropdown-item" routerLink="./love">Love story</a></li>
+            <li role="menuitem"><a class="dropdown-item" routerLink="./family">Семейные фотосессии</a></li>
+            <li class="divider dropdown-divider"></li>
+            <li role="menuitem"><a class="dropdown-item" routerLink="./one">Индивидуальные фотосесии </a>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="btn-group" dropdown>
+          <button id="button-basic" dropdownToggle type="button" class="btn nav-link dropdown-toggle stylebutton"
+                  aria-controls="dropdown-basic">
+            Фото оформление <span class="caret"></span>
+          </button>
+          <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+              role="menu" aria-labelledby="button-basic">
+            <li role="menuitem"><a class="dropdown-item" routerLink="./fotobook">Фотокниги</a></li>
+            <li role="menuitem"><a class="dropdown-item" routerLink="./fotobox">Фото в каробке</a></li>
+            <li role="menuitem"><a class="dropdown-item" routerLink="./fotoholst">Холсты</a></li>
+            <li class="divider dropdown-divider"></li>
+            <li role="menuitem"><a class="dropdown-item" routerLink="./palaroid">Palaroid фото</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="btn-group" dropdown>
+          <button id="button-basic" dropdownToggle type="button" class="btn nav-link dropdown-toggle stylebutton"
+                  aria-controls="dropdown-basic">
+            Советник <span class="caret"></span>
+          </button>
+          <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+              role="menu" aria-labelledby="button-basic">
+            <li role="menuitem"><a class="dropdown-item" routerLink="./getmerrid">Свадебная подготовка</a></li>
+            <li role="menuitem"><a class="dropdown-item"  routerLink="./style">Стиль для фотосесии</a></li>
+            <li role="menuitem"><a class="dropdown-item" routerLink="./children">Фотосессия с детьми</a></li>
+            <li class="divider dropdown-divider"></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">То что вдохновляет</a>
+            </li>
+          </ul>
+        </div>
+
+
+        <li class="nav-item">
+          <a class="nav-link " routerLink="./iam">Контакты</a>
+
+
+
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+</header>
+
+<router-outlet></router-outlet>
+
+
+<footer class="footer">
+  <div class="container text-center">
+    <p class="mb-1">&copy; 2017-2019 Daria Boiko</p>
+    <ul class="list-inline">
+      <li class="list-inline-item">Контакты:</li>
+      <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100026636616910"><i class="fab fa-facebook"></i></a></li>
+      <li class="list-inline-item"><a href="https://www.instagram.com/dariaboiko_photographer/"><i class="fab fa-instagram"></i></a></li>
+
+      <li class="list-inline-item"><i class="fab fa-vk"></i></li>
+    </ul>
+    <p class="phon">Контактный телефон 380(99)342 86 12</p>
+  </div>
+
+
+</footer>

@@ -1,0 +1,25 @@
+.container2 {
+  padding: 60px 15px 0;
+}
+
+.container2 {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+.logo{
+  width: 20%;
+  margin: 67px auto 0 auto;
+  display: block;
+}
+.text {
+  text-align: center;
+}
+.stylebutton{
+  background-color: #f8f9fa;
+  outline: none !important;
+  box-shadow: none;
+}
